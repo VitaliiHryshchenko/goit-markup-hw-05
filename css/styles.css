@@ -459,6 +459,7 @@ transform: translateY(0%);
       color: #ffffff;
 }
 .rewiew-form-footer {
+      display: flex;
       gap: 24px;
 }
 .rewiew-form-footer-input {
@@ -475,6 +476,8 @@ transform: translateY(0%);
       letter-spacing: 0.04em;
       text-align: left;
       color: #ffffff;
+      padding-left: 16px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .rewiew-form-footer-input::placeholder {
       color: #ffffff;
@@ -482,7 +485,7 @@ transform: translateY(0%);
       padding-top: 8px;
 }
 .rewiew-form-footer-button {
-      display: block;
+      display: flex;
       justify-content: center;
       align-items: center;
       min-width: 165px;
@@ -547,13 +550,12 @@ transform: translateY(0%);
       background-color:#fcfcfc;
       border-radius: 4px;
       padding: 72px 24px 24px 24px;
-      box-shadow: rgba(0, 0, 0, 0.14);
-      box-shadow: rgba(0, 0, 0, 0.12);
-      box-shadow: rgba(0, 0, 0, 0.2);
+      box-shadow: rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2);
 }
 
 .close-modal .icon-close-modal {
       fill: rgba(46, 47, 66, 1);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal {
@@ -573,6 +575,7 @@ transform: translateY(0%);
 .close-modal:hover,
 .close-modal:focus{
       cursor: pointer;
+      fill: #ffffff;
 }
 
 .close-modal:active{
@@ -616,6 +619,8 @@ transform: translateY(0%);
       margin-bottom: 16px;
 }
 .rewiew-form-icon {
+      top: 50%;
+      transform: translateY(-50%, -50%);
       fill: #2e2f42;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -662,7 +667,7 @@ transform: translateY(0%);
 .rewiew-form-checkbox-label {
       font-size: 12px;
       font-weight: 400;
-      line-height: 1.33;
+      line-height: 1.17;
       letter-spacing: 0.04em;
       text-align: left;
       color: #8E8F99;
@@ -673,7 +678,7 @@ transform: translateY(0%);
       text-decoration: underline;
 }
 .rewiew-form-button {
-      display: flex;
+      display: block;
       min-width: 169px;
       height: 56px;
       margin-left: auto;
@@ -687,7 +692,7 @@ transform: translateY(0%);
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       background-color: #4D5AE5;
       color: #ffffff;
       box-shadow: 0px 4px 4px 0px #00000026;
@@ -709,17 +714,20 @@ transform: translateY(0%);
       cursor: pointer; 
       fill: transparent;
       margin-right: 8px;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), bord
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .rewiew-form-checkbox-wrapper {
       margin-bottom: 24px;
 }
 
-.rewiew-form-checkbox:checked+.rewiew-form-checkbox-label .rewiew-form-own-checkbox{
+.rewiew-form-checkbox:checked + .rewiew-form-checkbox-label .rewiew-form-own-checkbox{
       background-color:  #404bbf;
       border-color: #404bbf;
       fill: #f4f4fd;
+      border: none;
 }
 
 /* ================= /elements form ================= */

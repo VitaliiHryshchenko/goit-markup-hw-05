@@ -488,7 +488,7 @@
         <div class="footer-form">
           <p class="name-form">Subscribe</p>
           <form class="rewiew-form-footer">
-            <label class="rewiew-form-footer-label" for=""></label>
+            <label class="rewiew-form-footer-label" for="input-footer"></label>
             <input
               class="rewiew-form-footer-input"
               type="email"
@@ -506,7 +506,7 @@
       </div>
     </footer>
     <!-- BACKDROP -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-modal" type="button">
           <svg
@@ -521,13 +521,13 @@
         <p class="text-modal">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="rewiew-form-wrapper">
-            <label class="user-label-form" for="user-first-name"> Name </label>
+            <label class="user-label-form" for="user-name"> Name </label>
             <div class="rewiew-form-input-wrapper">
               <input
                 class="rewiew-form-field"
                 type="text"
                 name="user_first_name"
-                id="user-first-name"
+                id="user-name"
                 required
                 pattern="[a-zA-Zа-яА-яіІїЇєЄйЙ']+"
               />
@@ -572,7 +572,7 @@
             <label class="user-label-form" for="user-comment">Comment</label>
             <textarea
               class="rewiew-form-field-area"
-              name="user_comment"
+              name="user-comment"
               id="user-comment"
               placeholder="Text input"
             ></textarea>
@@ -581,12 +581,12 @@
             <input
               class="rewiew-form-checkbox visually-hidden"
               type="checkbox"
-              name="user_policy"
-              id="user-policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="rewiew-form-checkbox-label" for="user-policy">
+            <label class="rewiew-form-checkbox-label" for="user-privacy">
               <span class="rewiew-form-own-checkbox">
                 <svg
                   class="rewiew-form-own-checkbox-icon"
