@@ -446,6 +446,58 @@ transform: translateY(0%);
       gap: 16px;
 
 }
+.footer-icon {
+      margin-right: 80px;
+}
+.name-form {
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: #ffffff;
+}
+.rewiew-form-footer {
+      gap: 24px;
+}
+.rewiew-form-footer-input {
+      width: 264px;
+      height: 40px;
+      background: rgba(46, 47, 66, 1);
+      border: 1px solid #ffffff;
+      border-radius: 4px;
+      background-color: transparent;
+      
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      text-align: left;
+      color: #ffffff;
+}
+.rewiew-form-footer-input::placeholder {
+      color: #ffffff;
+      padding-left: 16px;
+      padding-top: 8px;
+}
+.rewiew-form-footer-button {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      min-width: 165px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      text-align: center;
+      cursor: pointer;
+      background-color: #4D5AE5;
+      border: none;
+      border-radius: 4px;
+      color: #ffffff;
+      }
 /* ================= /footer ================= */
 
 /* ================= backdrop ================= */
@@ -462,7 +514,7 @@ transform: translateY(0%);
       visibility: hidden;
       pointer-events: none;
       transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
       opacity: 1;
@@ -489,17 +541,21 @@ transform: translateY(0%);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);   
       width: 408px;
-      height: 584px;
-      background-color: rgba(252, 252, 252, 1);
+      min-height: 584px;
+      background-color:#fcfcfc;
       border-radius: 4px;
       padding: 72px 24px 24px 24px;
-
+      box-shadow: rgba(0, 0, 0, 0.14);
+      box-shadow: rgba(0, 0, 0, 0.12);
+      box-shadow: rgba(0, 0, 0, 0.2);
 }
+
 .close-modal .icon-close-modal {
       fill: rgba(46, 47, 66, 1);
 }
+
 .close-modal {
       position: absolute;
       top: 24px;
@@ -513,10 +569,12 @@ transform: translateY(0%);
       background-color: rgba(231, 233, 252, 1);
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .close-modal:hover,
 .close-modal:focus{
       cursor: pointer;
 }
+
 .close-modal:active{
       background-color: rgba(64, 75, 191, 1);
 }
@@ -527,7 +585,7 @@ transform: translateY(0%);
       display: block;
       font-size: 12px;
       font-weight: 400;
-      line-height: 1.16;
+      line-height: 1.17;
       letter-spacing: 0.04em;
       text-align: left;
       color: rgba(142, 143, 153, 1);
@@ -538,9 +596,10 @@ transform: translateY(0%);
       height: 40px;
       border: 1px solid #2e2f4266;
       border-radius: 4px;
-      padding-left: 62px;
+      padding-left: 38px;
       outline-color: transparent;
       outline-offset: 4px;
+      background-color: transparent;
       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -553,6 +612,9 @@ transform: translateY(0%);
 .rewiew-form-wrapper {
       margin-bottom: 8px;
 }
+.rewiew-form-wrapper-area {
+      margin-bottom: 16px;
+}
 .rewiew-form-icon {
       fill: #2e2f42;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -562,14 +624,14 @@ transform: translateY(0%);
 }
 .rewiew-form-icon {
       position: absolute;
-      top: 14px;
-      left: 19px;
+      top: 8px;
+      left: 16px;
       line-height: 0;
 }
 
 .rewiew-form-field-area {
       width: 100%;
-      height: 138px;
+      height: 120px;
       border-radius: 4px;
       outline-color: transparent;
       outline-offset: 4px;
@@ -578,12 +640,12 @@ transform: translateY(0%);
       padding: 8px 16px;
       font-size: 12px;
       font-weight: 400;
-      line-height: 1.16;
+      line-height: 1.17;
       letter-spacing: 0.04em;
       text-align: left;
-      color: #434455;
       border: 1px solid #2E2F4266;
-
+      background-color: transparent;
+      color: rgba(46, 47, 66, 0.4);
 }
 
 .rewiew-form-field-area:focus {
@@ -611,8 +673,8 @@ transform: translateY(0%);
       text-decoration: underline;
 }
 .rewiew-form-button {
-      display: block;
-      width: 169px;
+      display: flex;
+      min-width: 169px;
       height: 56px;
       margin-left: auto;
       margin-right: auto;
@@ -622,9 +684,42 @@ transform: translateY(0%);
       font-weight: 500;
       line-height: 1.5;
       letter-spacing: 0.04em;
-      text-align: center;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
       background-color: #4D5AE5;
       color: #ffffff;
       box-shadow: 0px 4px 4px 0px #00000026;
 }
+.rewiew-form-button:hover,
+.rewiew-form-button:focus {
+      background-color: #404bbf;
+      border: none;
+}
+
+.rewiew-form-own-checkbox {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #2e2f4266;
+      border-radius: 2px;
+      cursor: pointer; 
+      fill: transparent;
+      margin-right: 8px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), bord
+
+}
+.rewiew-form-checkbox-wrapper {
+      margin-bottom: 24px;
+}
+
+.rewiew-form-checkbox:checked+.rewiew-form-checkbox-label .rewiew-form-own-checkbox{
+      background-color:  #404bbf;
+      border-color: #404bbf;
+      fill: #f4f4fd;
+}
+
 /* ================= /elements form ================= */
