@@ -550,16 +550,26 @@ transform: translateY(0%);
       background-color:#fcfcfc;
       border-radius: 4px;
       padding: 72px 24px 24px 24px;
-      box-shadow: rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                  0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+                  0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .close-modal .icon-close-modal {
       fill: rgba(46, 47, 66, 1);
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-close-modal:hover,
+.icon-close-modal:focus {
+      fill: #ffffff;
+}
 
 .close-modal {
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
       top: 24px;
       right: 24px;
       padding: 0;
@@ -569,18 +579,18 @@ transform: translateY(0%);
       height: 24px;
       border: 1px solid rgba(0, 0, 0, 0.1);
       background-color: rgba(231, 233, 252, 1);
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal:hover,
 .close-modal:focus{
-      cursor: pointer;
       fill: #ffffff;
+      background-color: #404bbf;
+      border: none;
+      outline-color: transparent;
 }
 
-.close-modal:active{
-      background-color: rgba(64, 75, 191, 1);
-}
+
 /* ================= /modal window ================= */
 
 /* ================= elements form ================= */
@@ -619,8 +629,9 @@ transform: translateY(0%);
       margin-bottom: 16px;
 }
 .rewiew-form-icon {
+      position: absolute;
       top: 50%;
-      transform: translateY(-50%, -50%);
+      transform: translateY(-50%,);
       fill: #2e2f42;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -723,7 +734,7 @@ transform: translateY(0%);
       margin-bottom: 24px;
 }
 
-.rewiew-form-checkbox:checked + .rewiew-form-checkbox-label .rewiew-form-own-checkbox{
+.rewiew-form-checkbox:checked + .rewiew-form-checkbox-label .rewiew-form-own-checkbox {
       background-color:  #404bbf;
       border-color: #404bbf;
       fill: #f4f4fd;
